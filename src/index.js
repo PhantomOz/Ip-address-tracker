@@ -32,14 +32,13 @@ if($("#inp").val() === ""){
                 mymap.setView([lat, lng], 13);
                 
                 var marker = L.marker([lat, lng], {icon: myIcon}).addTo(mymap);
-                var circle = L.circle([lat, lng], {
+                L.circle([lat, lng], {
                     color: 'red',
                     fillColor: '#f03',
                     fillOpacity: 0.5,
                     radius: 1000
                 }).addTo(mymap);
                 marker.bindPopup("<b>" + data.isp +"</b>.").openPopup();
-                circle.bindPopup("I am a circle.");
 
                 var popup = L.popup();
 
@@ -62,7 +61,6 @@ $("#go").click(()=>{
             url: "https://geo.ipify.org/api/v1",
             data: {apiKey: api_key, domain: ipDom },
             success: function(data) {
-                // $("#map").append("<pre>"+ JSON.stringify(data,"",2)+"</pre>");
                 $("#ipaddress").text(data.ip);
                 $("#location").text(data.location.region + ", " + data.location.city);
                 $("#timezone").text("utc " + data.location.timezone);
