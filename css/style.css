@@ -140,7 +140,9 @@ input[type="text"]{
         padding: 10px 0;
     }
     .attribution{
-        padding: 5px;
+        position: static;
+        width: 100%;
+        padding: 20px;
     }
     .map{
         position: relative;
