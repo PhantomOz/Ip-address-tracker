@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    overflow: hidden;
+}
+/************************************** General stuff ****************************************/
+.title{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+.header{
+    background-image: url("/assets/images/pattern-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none;
+    padding-top: 30px;
+    padding-bottom: 180px;
+}
+input[type="text"]{
+    width: 90%;
+    height: 23px;
+    font-size: 18px;
+    padding: 18px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.go{
+    font-size: 20px;
+    outline: none;
+    color: white;
+    background-color: hsl(0, 0%, 17%);
+    border: none;
+    width: 10%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+.go:hover{
+    padding-left: 20px;
+    color: black;
+    background-color: white;
+}
+.container{
+    background-color: white;
+    margin: auto;
+    padding: 20px 0;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.row:after{
+    content: "";
+    clear: both;
+    display: table;
+    margin: 0 auto;
+}
+
+[class*="col-"] {
+    float: left;
+    margin: 10;
+}
+.attribution { 
+    background-color: aqua;
+    font-size: 11px;
+    font-weight: 600; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+/*************************************** Responsiveness ******************************************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-sm-1{
+        width: 8.33%;
+    }
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+    .body{
+        overflow: show;
+    }
+    input[type="text"]{
+        width: 75%;
+    }
+    .go{
+        width: 15%;
+    }
+    .container{
+        max-width: 450px;
+        text-align: center;
+        position: relative;
+        top: -130px;
+        margin: 0 50px 0 50px;
+    }
+    .input{
+        text-align: center;
+        width: 350px;
+        display: flex;
+        margin: auto;
+    }
+    p{
+        padding: 0 20px;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 59%);
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .data{
+        font-size: 18px;
+        font-weight: 500;
+        color: hsl(0, 0%, 17%);
+        margin-top: -2px;
+    }
+    .right{
+        padding: 10px 0;
+        vertical-align: middle;
+        margin: 0 auto -30px;
+    }
+    .last{
+        vertical-align: middle;
+        padding: 10px 0;
+    }
+    .map{
+        position: relative;
+        top: -310px;
+        height: 600px;
+        z-index: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .col-sm-1{
+        width: 8.33%;
+    }
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+    .container{
+        max-width: 610px;
+        text-align: center;
+        position: relative;
+        top: -132px;
+    }
+    .input{
+        text-align: center;
+        width: 500px;
+        display: flex;
+        margin: auto;
+    }
+    p{
+        padding: 0 20px;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 59%);
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .data{
+        font-size: 18px;
+        font-weight: 500;
+        color: hsl(0, 0%, 17%);
+        margin-top: -2px;
+    }
+    .right{
+        padding: 10px 0;
+        vertical-align: middle;
+        margin: 0 auto -30px;
+    }
+    .last{
+        vertical-align: middle;
+        padding: 10px 0;
+    }
+    .map{
+        position: relative;
+        top: -310px;
+        height: 800px;
+        z-index: 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .col-md-1{
+        width: 8.33%;
+    }
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+    .container{
+        max-width: 800px;
+        text-align: left;
+        position: relative;
+        top: -110px;
+    }
+    .input{
+        text-align: center;
+        width: 500px;
+        display: flex;
+        margin: auto;
+    }
+    p{
+        padding: 0 20px;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 59%);
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .data{
+        font-size: 18px;
+        font-weight: 500;
+        color: hsl(0, 0%, 17%);
+        margin-top: -2px;
+    }
+    .right{
+        border-right: 2px solid hsla(0, 0%, 59%, 0.295);
+        padding: 10px 0;
+        vertical-align: middle;
+    }
+    .last{
+        vertical-align: middle;
+        padding: 10px 0;
+    }
+    .map{
+        position: relative;
+        top: -218px;
+        height: 800px;
+        z-index: 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-lg-1{
+        width: 8.33%;
+    }
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+    .container{
+        max-width: 1050px;
+        position: relative;
+        top: -110px;
+    }
+    .input{
+        text-align: center;
+        width: 500px;
+        display: flex;
+        margin: auto;
+    }
+    p{
+        padding: 0 20px;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 59%);
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .data{
+        font-size: 18px;
+        font-weight: 500;
+        color: hsl(0, 0%, 17%);
+        margin-top: -2px;
+    }
+    .right{
+        border-right: 2px solid hsla(0, 0%, 59%, 0.295);
+        padding: 10px 0;
+        vertical-align: middle;
+    }
+    .last{
+        vertical-align: middle;
+        padding: 10px 0;
+    }
+    .map{
+        position: relative;
+        top: -175px;
+        height: 800px;
+        z-index: 0;
+    }
+}
+.leaflet-control-attribution{
+    display: none;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col-xl-1{
+        width: 8.33%;
+    }
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+    .container{
+        max-width: 1300px;
+        position: relative;
+        top: -110px;
+    }
+    .input{
+        text-align: center;
+        width: 500px;
+        display: flex;
+        margin: auto;
+    }
+    p{
+        padding: 0 20px;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 59%);
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .data{
+        font-size: 18px;
+        font-weight: 500;
+        color: hsl(0, 0%, 17%);
+        margin-top: -2px;
+    }
+    .right{
+        border-right: 2px solid hsla(0, 0%, 59%, 0.295);
+        padding: 10px 0;
+        vertical-align: middle;
+    }
+    .last{
+        vertical-align: middle;
+        padding: 10px 0;
+    }
+    .map{
+        position: relative;
+        top: -175px;
+        height: 1000px;
+        z-index: 0;
+    }
+}

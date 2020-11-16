@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ip Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/369f4e324e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+</head>
+<body class="body">
+    <div class="header">
+        <h2 class="title">IP Address Tracker</h2>
+        <div class="input">
+            <input type="text" name="inp" id="inp" placeholder="Search for any IP address or domain">
+            <button type="button" class="go" id="go"><i class="fas fa-angle-right"></i></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 col-sm-12">
+                <div class="right">
+                    <p>ip address</p>
+                    <p class="data" id="ipaddress"></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3 col-sm-12">
+                <div class="right">
+                    <p>Location</p>
+                    <p class="data" id="location"></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3 col-sm-12">
+                <div class="right">
+                    <p>timezone</p>
+                    <p class="data" id="timezone"></p>
+                </div>
+                
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3 col-sm-12">
+                <div class="last">
+                    <p>isp</p>
+                    <p class="data" id="isp"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="map" id="mapid">
+        
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="asof.cf">PhantomOz</a>.
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="src/index.js"></script>
+</body>
+</html>
