@@ -168,7 +168,8 @@ input[type="text"]{
     .col-sm-11 {width: 91.66%;}
     .col-sm-12 {width: 100%;}
     .body{
-        overflow: scroll;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
     input[type="text"]{
         width: 75%;
@@ -222,7 +223,8 @@ input[type="text"]{
     .attribution { 
         background-color: aqua;
         font-size: 11px;
-        font-weight: 600; 
+        font-weight: 600;
+        width: fit-content; 
         text-align: center; 
         position: fixed;
         bottom: 0;
@@ -306,6 +308,9 @@ input[type="text"]{
     .col-md-10 {width: 83.33%;}
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
+    .body{
+        overflow: hidden;
+    }
     .container{
         max-width: 800px;
         text-align: left;
