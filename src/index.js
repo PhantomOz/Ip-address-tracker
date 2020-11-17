@@ -1,4 +1,4 @@
-$(".leaflet-popup-close-button").attr("href", "#")
+
 let myIcon = L.icon({
     iconUrl: '/assets/images/icon-location.svg',
     iconSize: [45, 52],
@@ -36,7 +36,7 @@ if($("#inp").val() === ""){
                     fillOpacity: 0.5,
                     radius: 1000
                 }).addTo(mymap);
-                marker.bindPopup("<b>" + data.isp +"</b>.").openPopup();
+                marker.bindPopup("<b id='close'>" + data.isp +"</b>.").openPopup();
 
                 // var popup = L.popup();
 
