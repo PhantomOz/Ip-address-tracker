@@ -1,4 +1,4 @@
-
+$(".leaflet-popup-close-button").attr("href", "#")
 let myIcon = L.icon({
     iconUrl: '/assets/images/icon-location.svg',
     iconSize: [45, 52],
