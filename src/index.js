@@ -7,7 +7,6 @@ let myIcon = L.icon({
 });
 let mymap = L.map('mapid')
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    // attribution: ' <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
     tileSize: 512,
@@ -26,7 +25,6 @@ if($("#inp").val() === ""){
                 $("#location").text(data.location.city + ", " + data.location.region+ ", "+ data.location.country + " " + data.location.postalCode);
                 $("#timezone").text("utc " + data.location.timezone);
                 $("#isp").text(data.isp);
-                console.log(data);
                 let lat = data.location.lat;
                 let lng = data.location.lng;
                 mymap.setView([lat, lng], 13);
@@ -40,16 +38,16 @@ if($("#inp").val() === ""){
                 }).addTo(mymap);
                 marker.bindPopup("<b>" + data.isp +"</b>.").openPopup();
 
-                var popup = L.popup();
+                // var popup = L.popup();
 
-                function onMapClick(e) {
-                    popup
-                        .setLatLng(e.latlng)
-                        .setContent("You clicked the map at " + e.latlng.toString())
-                        .openOn(mymap);
-                }
+                // function onMapClick(e) {
+                //     popup
+                //         .setLatLng(e.latlng)
+                //         .setContent("You clicked the map at " + e.latlng.toString())
+                //         .openOn(mymap);
+                // }
 
-                mymap.on('click', onMapClick);
+                // mymap.on('click', onMapClick);
             }
         });
     });
